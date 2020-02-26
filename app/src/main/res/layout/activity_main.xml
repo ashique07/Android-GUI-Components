@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:orientation="vertical">
+
+    <CheckBox
+        android:id="@+id/checkbox_milk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Milk"
+        android:onClick="onCheckBoxClicked"
+        />
+
+    <CheckBox
+        android:id="@+id/checkbox_sugar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Sugar"
+        android:onClick="onCheckBoxClicked"
+        />
+
+    <ToggleButton
+        android:id="@+id/toggle_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textOn="ON"
+        android:textOff="OFF"
+        android:onClick="onToggleBoxClicked"
+        />
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_cavemen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="cavemen"
+            android:onClick="onClickRadioButton"/>
+
+        <RadioButton
+            android:id="@+id/radio_ast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="astronaut"
+            android:onClick="onClickRadioButton"/>
+
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/checkbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CHECKBOX" />
+
+    <TextView
+        android:id="@+id/togglebutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TOGGLEBUTTON"/>
+
+    <TextView
+        android:id="@+id/radiobutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RADIOBUTTON"/>
+
+    <ImageView
+        android:id="@+id/photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/leads_logo"
+        android:contentDescription="This is Leads Logo"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/leads_logo"
+        android:text="LEADS !" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/leads_logo"/>
+
+    </LinearLayout>
+
+
+</ScrollView>
